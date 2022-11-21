@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Latihan Semantic Element">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Semantic">
+    <meta name="author" content="pbw2022">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid gray;
+            padding: 25px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        col-1{width: 8.33%;}
+        col-2{width: 16.66%;}
+        col-3{width: 25%;}
+        col-4{width: 33.33%;}
+        col-5{width: 41.66%;}
+        col-6{width: 50%;}
+        col-7{width: 58.33%;}
+        col-8{width: 66.66%;}
+        col-9{width: 75%;}
+        col-10{width: 83.33%;}
+        col-11{width: 91.66%;}
+        col-12{width: 100%;}
+    </style>
+    <title>Semantic Element - HTML 5</title>
+</head>
+<body>
+        <header>
+            <h1>Judul Halaman</h1>
+        </header>
+        <nav class="col-2">
+            <ui>
+                <li>menu 1</li>
+                <li>menu 2</li>
+            </ui>
+        </nav>
+        </nav>
+            <article class="col-2">
+            <h3>Judul Artikel</h3>
+            <p>
+                lorem ipsum di site color <span style="font-size:50px;">Lorem</span>ipsum di site color ipsum di site color
+            </p>
+        </article>
+    <aside class="row">
+        <aside class="col-2">
+            <img src="1234444.jpg" width="300" height="200">
+        </aside>
+    </aside>
+        <footer class="col-1">
+            Copyright <i>&copy;</i> PBW2022
+        </footer>
+
+</body>
+</html>
